@@ -6,6 +6,7 @@ fn main {
     rl.question("> ", msg => {
       if msg == "exit" || msg == "quit" {
         println("Goodbye!")
+        rl.close()
         return
       }
       println("Assistant: ")
